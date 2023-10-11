@@ -17,7 +17,7 @@
   --text-color: #000000;
   --bg-url: url(./assets/bg-mobile-light.jpg) no-repeat top center/cover;
   --switch-bg-url: url(./assets/sun.svg) no-repeat center;
-  --border-image-profile: rgba(0, 0, 0, 0.5);
+  --border-image-profile: rgba(19, 255, 010, 0.5);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -50,12 +50,17 @@ body * {
 #profile {
   text-align: center;
   padding: 24px;
+  
 }
 
 #profile img {
   width: 112px;
-  border: 3px solid var(--border-image-profile);
+  border: 2px solid var(--border-image-profile);
   border-radius: 50%;
+  outline: 1px solid var(--stroke-color);
+}
+.light #profile img {
+  border: 2px solid var(--border-image-profile);
 }
 
 #profile p {
